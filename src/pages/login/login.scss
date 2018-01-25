@@ -1,0 +1,28 @@
+page-login {
+  .field-email input {
+    text-transform: lowercase;
+  }
+
+  .containerLogin {
+    background-position: center;
+    background-size: 400px;
+  }
+
+  .containerLogin button {
+    text-transform: none;
+  }
+
+  .containerLogin ion-card-header {
+    text-align: center;
+    color:#737373;
+    font-weight: 496;
+  }
+
+  .forgot_password {
+    margin-top: -10px;
+  }
+
+  .buttonEnter button{
+    background: #4d4d4d;
+  }
+}

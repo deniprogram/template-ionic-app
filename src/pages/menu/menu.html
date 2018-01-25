@@ -1,0 +1,33 @@
+<ion-menu [content]="content"  (ionOpen)="menuOpened()">
+    <ion-header class="custom_toolbar">
+        <img src="assets/images/generic_image/perfil.jpg" />
+        <ion-label class="name_user">
+            {{ currentUser.name }}
+        </ion-label>
+
+        <ion-label class="sharing_code">
+            {{ currentUser.sharing_code }}
+        </ion-label>
+    </ion-header>
+
+    <ion-content class="container_side_menu">
+        <ion-list>
+            <button menuClose color="blue_uudi" class="btn_side_menu" ion-item *ngFor="let page of pages" (click)="openPage(page)">
+              <ion-icon name="{{ page.icon }}"></ion-icon>
+              {{page.title}}
+            </button>
+
+            <button menuClose color="blue_uudi" class="btn_side_menu" ion-item (click)="openTour()">
+              <ion-icon name="ios-book"></ion-icon>
+              Tutorial
+            </button>
+
+            <button menuClose color="blue_uudi" class="btn_side_menu" ion-item (click)="exitAplication()">
+              <ion-icon name="exit"></ion-icon>
+              Sair
+            </button>
+        </ion-list>
+    </ion-content>
+</ion-menu>
+
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

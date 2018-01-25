@@ -1,0 +1,167 @@
+<ion-content class="tour">
+    <button ion-button icon-only (click)="closeTour()"  *ngIf="isReview()" style="position: absolute; z-index: 1000;">
+      <ion-icon name="close" color='white'></ion-icon>
+    </button>
+    <ion-slides pager>
+
+    <ion-slide>
+        <ion-row>
+            <ion-col>
+            <img src="assets/images/generic_image/logo-uudi_220x110.jpg" class="logo_intro" />
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col>
+            <img src="assets/images/generic_image/tour1.jpg" class="image_intro" />
+            </ion-col>
+        </ion-row>
+
+        <ion-row class="text-intro">
+              <ion-col>
+            <h3>Olá, Já conhece o UUDI App ?</h3>
+            </ion-col>
+            <p>Além de fazer recargas para qualquer
+            telefone de forma rápida, você pode indicar
+            amigos e ganhar sobre TODAS as recargas que eles realizarem, para SEMPRE!</p>
+        </ion-row>
+
+        <ion-row>
+            <ion-col>
+            <img src="assets/images/generic_image/tour-operators.jpg" />
+            </ion-col>
+        </ion-row>
+    </ion-slide>
+
+    <ion-slide>
+        <ion-row>
+            <ion-col>
+            <img src="assets/images/generic_image/logo-uudi_220x110.jpg" class="logo_intro" />
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col>
+            <img src="assets/images/generic_image/tour2.jpg" class="image_intro" />
+            </ion-col>
+        </ion-row>
+
+        <ion-row class="text-intro">
+              <ion-col>
+            <h3>Órbitas de indicaçōes :)</h3>
+            </ion-col>
+            <p>
+                Os ganhos sobre suas indicações, evoluem em até 3 órbitas, ou seja, você pode indicar seu avô, que pode indicar seu pai, que pode indicar sua irmā, e você ganha sobre todas as recargas realizadas nessas 3 órbitas!
+            </p>
+        </ion-row>
+
+    </ion-slide>
+
+    <ion-slide>
+        <ion-row>
+            <ion-col>
+            <img src="assets/images/generic_image/logo-uudi_220x110.jpg" class="logo_intro" />
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col>
+            <img src="assets/images/generic_image/tour3.jpg" class="image_intro" />
+            </ion-col>
+        </ion-row>
+
+        <ion-row class="text-intro">
+              <ion-col>
+            <h3>Indique quantos quiser!</h3>
+            </ion-col>
+            <p>
+               Não há limites de indicações, você pode indicar quantas pessoas quiser, e cada uma delas também podem indicar, todas formando suas 3 órbitas de indicações.
+            </p>
+        </ion-row>
+    </ion-slide>
+
+    <ion-slide>
+        <ion-row>
+            <ion-col>
+            <img src="assets/images/generic_image/logo-uudi_220x110.jpg" class="logo_intro" />
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col>
+            <img src="assets/images/generic_image/tour4.jpg" class="image_intro" />
+            </ion-col>
+        </ion-row>
+
+        <ion-row class="text-intro">
+              <ion-col>
+            <h3>UUDI FREE</h3>
+            </ion-col>
+            <p>
+              Como usuário FREE todo o bônus ganho sobre suas órbitas. você poderá efetuar recargas até 2 telefones escolhidos por você.
+            </p>
+        </ion-row>
+    </ion-slide>
+
+    <ion-slide>
+        <ion-row>
+            <ion-col>
+            <img src="assets/images/generic_image/logo-uudi_220x110.jpg" class="logo_intro" />
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col>
+            <img src="assets/images/generic_image/tour5.jpg" class="image_intro" />
+            </ion-col>
+        </ion-row>
+
+        <ion-row class="text-intro">
+              <ion-col>
+            <h3>UUDI PRO</h3>
+            </ion-col>
+            <p>
+              Como usuário PRO, você pode utilizar seu bônus como quiser, comprando recargas para qualquer número ou até mesmo, converter seu bônus em dinheiro!!
+            </p>
+        </ion-row>
+    </ion-slide>
+
+     <ion-slide>
+        <ion-row>
+            <ion-col>
+            <img src="assets/images/generic_image/logo-uudi_220x110.jpg" class="logo_intro" />
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col>
+            <img src="assets/images/generic_image/tour6.jpg" class="image_intro" />
+            </ion-col>
+        </ion-row>
+
+        <ion-row class="text-intro">
+              <ion-col>
+            <h3>100% SEGURO!</h3>
+            </ion-col>
+            <p>
+              Pode ficar tranquilo, além de todas as bandeiras de cartões de crédito e débito, suas transações são realizadas pelo gateway de pagamentos Cielo!
+            </p>
+        </ion-row>
+
+        <ion-row>
+            <ion-col>
+            <img style="width: 70px; margin-top: -20px;" src="assets/images/generic_image/cielo-logo.jpg" />
+            </ion-col>
+        </ion-row>
+
+         <ion-row padding *ngIf="!isReview()">
+            <ion-col col-12>
+                <button ion-button block color='blue_uudi' [navPush]="homePage">
+                  COMEÇAR
+                </button>
+            </ion-col>
+        </ion-row>
+    </ion-slide>
+
+    </ion-slides>
+</ion-content>

@@ -1,0 +1,28 @@
+.containerHome {
+	background-position: center;
+	background-size: 400px;
+}
+
+.logo{
+	width: 100px;
+	height: 100px;
+	margin: auto;
+	background-position: center;
+  background-size: 250px;
+  background-repeat: no-repeat;
+	margin-top: 60%;
+}
+
+.containeButtonsHome {
+	margin-top: 40%;
+}
+
+.containerHome button {
+	 text-transform: none;
+}
+
+.containerHome button + button {
+	 background: #fff;
+	 text-transform: none;
+	 color:#737373;
+}

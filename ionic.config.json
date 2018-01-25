@@ -1,0 +1,14 @@
+{
+  "name": "app",
+  "app_id": "e72ab266",
+  "type": "ionic-angular",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*",
+    "!www/**/*.map"
+  ]
+}
